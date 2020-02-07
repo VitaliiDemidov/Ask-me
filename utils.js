@@ -1,3 +1,4 @@
+import apiKey from '1.js'
 export function isValid(value) {
   return value.length >= 10;
 }
