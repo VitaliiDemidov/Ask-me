@@ -1,4 +1,3 @@
-import apiKey from '1.js'
 export function isValid(value) {
   return value.length >= 10;
 }
@@ -14,7 +13,7 @@ export function createModal(title, content) {
 }
 
 export function authWithEmailAndPassword(email, password) {
-
+  const apiKey = "8cC5Wi7xhtYsfN0ryqgLYY1UyjW2";
   return fetch(
     `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${apiKey}`,
     {

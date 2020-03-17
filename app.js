@@ -24,7 +24,6 @@ function submitFormHandler(event) {
     };
 
     submitBtn.disabled = true;
-    // Async request to server to save question
     Question.create(question).then(() => {
       input.value = "";
       input.className = "";
